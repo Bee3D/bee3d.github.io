@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            desmos
+        </title>
+    <!--<link rel="stylesheet" type="text/css" href="style.css">
+        not needed here + it breaks my webpage >:(-->
+    </head>
+
+    <body>
+        <a href="index.html">home</a>
+        <script src="https://www.desmos.com/api/v1.8/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+        <div id="calculator" style="width: 600px; height: 400px;"></div>
+        <script>
+          var elt = document.getElementById('calculator');
+          var calculator = Desmos.GraphingCalculator(elt);
+        </script>
+    </body>
+
+</html>
