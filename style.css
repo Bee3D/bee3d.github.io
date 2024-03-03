@@ -4,7 +4,6 @@ body {
 }
 
 body > div {
-    padding-left:10px;
     padding-right:10px;
 }
 
@@ -13,11 +12,10 @@ body > div {
     background-color:#1a2373;
     display:flex;
     box-shadow:0px 2px 10px 3px black;
-    position:relative;
     height:50px;
     justify-content:center;
     position:fixed;
-    width:calc(100vw - 20px);
+    width:calc(100vw - 10px);
 }
 
 /*nothing to do with centering, fixes some stuff
@@ -33,17 +31,28 @@ h1,h2,h3,h4,h5,h6 {
     color:#ffffff;
 }
 
-/*couldnt get it to work otherwise, might fix later.
-for now just recolor them or put them into #content*/
-a:link,a:visited {
+.headerTextBox {
+    height:50px;
+    padding-left:5px;
+    padding-right:5px;
+    display:flex;
+    align-items:center;
+    transition:0.3s;
+}
+
+.headerTextBox:hover {
+    background-color:#ffffff;
+    transition:0.3s;
+}
+
+.headerTextBox a {
     color:#ffffff;
     text-decoration:none;
     font-size:20px;
 }
 
-/*fix me daddy UwU*/
-a:hover {
-    
+.headerTextBox:hover a {
+    color:#1a2373;
 }
 
 #underline {
@@ -60,11 +69,32 @@ a:hover {
     column-count:1;
 }
 
-#content > p {
+#content p {
     font-size:19px;
 }
 
-#content > a {
+#content a {
     color:#98cce3;
     text-decoration:underline
+}
+
+@media only screen and (max-device-width: 480px) {
+    .headerTextBox a {
+        padding-left:10px;
+        padding-right:10px;
+    }
+    
+    .headerTextBox a, #header {
+        font-size:45px;
+        align-items: center;
+        
+    }
+    
+    #header {
+        height:100px;
+    }
+    
+    #content p, #content {
+        font-size:40px;
+    }
 }

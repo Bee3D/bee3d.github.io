@@ -9,7 +9,7 @@
 
     <body>
         <div id="header">
-            <p><a href="index.html">Home</a>&#8199;<a href="links.html">Links</a>&#8199;<a href="credits.html">Credits</a></p>
+            <p><div class="headerTextBox"><a href="index.html" id="underline">Home</a></div><div class="headerTextBox"><a href="links.html">Links</a></div><div class="headerTextBox"><a href="credits.html">Credits</a></div></p>
             <div class="center">
                 <h1>Bee3D</h1>
             </div>
