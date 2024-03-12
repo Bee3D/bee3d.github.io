@@ -5,15 +5,22 @@
             fix me stupid
         </title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="bee2_tBV_icon.ico">
+    <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1, user-scalable=no">
     </head>
 
     <body>
-        <div id="header">
-            <p><div class="headerTextBox"><a href="index.html" id="underline">Home</a></div><div class="headerTextBox"><a href="links.html">Links</a></div><div class="headerTextBox"><a href="credits.html">Credits</a></div></p>
-            <div class="center">
-                <h1>Bee3D</h1>
-            </div>
+    <div id="header">
+        <p>
+        <div class="headerTextBox"><a href="index.html" id="underline">Home</a></div>
+        <div class="headerTextBox"><a href="links.html">Links</a></div>
+        <div class="headerTextBox"><a href="credits.html">Credits</a></div>
+        <div class="headerTextBox"><a href="random.html">Random</a></div>
+        </p>
+        <div class="center">
+            <h1>Bee3D</h1>
         </div>
+    </div>
         <div id="content">
             <p></p>
         </div>
