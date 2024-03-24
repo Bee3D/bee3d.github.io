@@ -79,6 +79,11 @@ h1,h2,h3,h4,h5,h6 {
     text-decoration:underline
 }
 
+hr.half {
+    border-style:dashed;
+    width:50%
+}
+
 /*this is the deprecated mobile support. A single meta tag works better than an hour of work :(
 
 but fr <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1, user-scalable=no"> on top */
