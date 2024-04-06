@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>background</title>
+        <style>
+            html {
+                height: calc(100vh - 10px);
+                width: calc(100vw - 10px);
+                border-style: solid;
+                border-width:5px;
+                animation-name: rainbow-border;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+
+            body {
+                background-color:black;
+            }
+
+            @keyframes rainbow-border{
+                100%,0%{
+                    border-color: rgb(255,0,0);
+                }
+                8% {
+                    border-color: rgb(255,127,0);
+                }
+                16%{ 
+                    border-color: rgb(255,255,0);
+                }
+                25%{
+                    border-color: rgb(127,255,0);
+                }
+                33%{
+                    border-color: rgb(0,255,0);
+                }
+                41%{
+                    border-color: rgb(0,255,127);
+                }
+                50%{
+                    border-color: rgb(0,255,255);
+                }
+                58%{
+                    border-color: rgb(0,127,255);
+                }
+                66%{
+                    border-color: rgb(0,0,255);
+                }
+                75%{
+                    border-color: rgb(127,0,255);
+                }
+                83%{
+                    border-color: rgb(255,0,255);
+                }
+                91%{
+                    border-color: rgb(255,0,127);
+                }
+            }
+        </style>
+    </head>
+        
+    <!--
+        made for use with the KDE wallpaper plugin called "HTML Wallpaper" by the-unknown
+        https://store.kde.org/p/1324580
+        to use this, upload to github pages or use my website: https://bee3d.github.io/
+    !-->
+        
+    <body>
+        <div>
+            
+        </div>
+    </body>
+    
+</html>
