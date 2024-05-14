@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            Minecraft Stack Calculator
+        </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1, user-scalable=no">
+    </head>
+
+    <body>
+    <div id="header">
+        <p>
+        <div class="headerTextBox"><a href="index.html" id="underline">Home</a></div>
+        <div class="headerTextBox"><a href="links.html">Links</a></div>
+        <div class="headerTextBox"><a href="credits.html">Credits</a></div>
+        <div class="headerTextBox"><a href="random.html">Random</a></div>
+        </p>
+        <div class="center">
+            <h1>Bee3D</h1>
+        </div>
+    </div>
+        <div id="content">
+            <p>Amount needed</p>
+            <input type="text" id="myText" value="">
+            <br>
+            <p>Multiplied by: (leave as 1 for no multiplication)</p>
+            <input type="text" id="myText2" value="1">
+            <button onclick="myFunction()">Calculate</button>
+            <br>
+            <p id="result"></p>
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myText").value;
+                    var y = document.getElementById("myText2").value;
+                    var z = x * y;
+                    document.getElementById("result").innerHTML = Math.floor(z / 64) + " stacks and " + z % 64 + " items";
+                }
+            </script>
+        </div>
+    </body>
+
+</html>
