@@ -35,7 +35,8 @@
                     var x = document.getElementById("myText").value;
                     var y = document.getElementById("myText2").value;
                     var z = x * y;
-                    document.getElementById("result").innerHTML = Math.floor(z / 64) + " stacks and " + z % 64 + " items";
+                    var s = Math.floor(z / 64)
+                    document.getElementById("result").innerHTML = Math.floor(s / 27) + " barrels, " + s % 27  + " stacks and " + z % 64 + " items";
                 }
             </script>
         </div>
